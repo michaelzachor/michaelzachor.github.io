@@ -1,0 +1,136 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+.aboutMe {
+    line-height: 150%;
+}
+
+h2 {
+    color: #383838;
+    font-size: 48px;
+    text-align: center;
+}
+
+.info {
+    margin: 0 300px;
+    font-weight: 300;
+}
+
+.job {
+    border-top: 2px solid black;
+    margin-top: 20px;
+}
+
+.position {
+    font-size: 30px;
+}
+
+.date {
+    font-size: 15px;
+}
+
+.name {
+    font-size: 30px;
+}
+
+.project {
+    border-top: 2px solid black;
+    margin-top: 30px;
+}
+
+.projectDescription {
+    line-height: 150%;
+}
+
+.figma1 {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 2px;
+}
+
+.figma2 {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 2px;
+}
+
+.twoImages {
+    max-width: 400px;
+    height: auto;
+}
+
+.oneImage {
+    max-width: 800px;
+    height: auto;
+}
+
+.portrait {
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 10px auto;
+    max-width: 200px;
+    height: auto;
+}
+
+.images {
+    display: block;
+    margin: auto;
+}
+
+.link {
+    border: 1px solid gray;
+    border-radius: 2px;
+    padding: 2px;
+    text-decoration: none;
+    color: gray;
+}
+.link:hover {
+    color: white;
+    background-color: lightgray;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+.navbar-item {
+    color: grey;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.navbar-item:hover {
+    background-color: lightblue;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+.navbar-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.navbar-item {
+    font-size: 20px;
+}
+
+.resumeImg {
+    height: 800px;
+    width: 500px;
+    display: block;
+    margin: 10px auto;
+}
