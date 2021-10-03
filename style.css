@@ -70,6 +70,12 @@ h2 {
     height: auto;
 }
 
+.specdrumsPoster {
+    max-width: 400px;
+    height: auto;
+    /* margin-bottom: 30px; */
+}
+
 .portrait {
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
