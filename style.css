@@ -19,8 +19,13 @@ h2 {
     text-align: center;
 }
 
+#softEng {
+    margin: 0;
+}
+
 .info {
-    margin: 0 300px;
+    margin: 0 auto;
+    max-width: 900px;
     font-weight: 300;
 }
 
