@@ -9,9 +9,9 @@
   <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1, 300;1,400;1,700&display=swap" rel="stylesheet">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
 
 </head>
 
@@ -20,18 +20,23 @@
         <div class="main">
             <nav class="navbar" role="navigation">
                 <div class="navbar-menu">
-                    <a class="navbar-item" href="#experience">Experience</a>
                     <a class="navbar-item" href="#projects">Projects</a>
+                    <a class="navbar-item" href="#experience">Experience</a>
                     <a class="navbar-item" href="#skills">Skills</a>
                     <a class="navbar-item" href="#resume">Resume</a>
                 </div>
             </nav>
-            <h1>Michael Zachor</h1>  
             <div class="about info" id="about">
-                <div class="images">
-                    <img class="portrait" src="./images/IMG_4335.jpg">
+                <div class="container">
+                    <div class="column">
+                        <h1>MICHAEL ZACHOR</h1>  
+                        <h2 id="softEng">SOFTWARE ENGINEER</h2>
+                    </div>
+                    <div class="images column">
+                        <img class="portrait" src="./images/IMG_4335.jpg">
+                    </div>
                 </div>
-                <h2 id="softEng">Software Engineer</h2>
+                <div class="blurb">CREATIVE THINKING | CRITICAL THINKING</div>
                 <div class="aboutMe">
                     I'm a senior at NYU pursuing a BS in Integrated Design & Media and an MS in Computer Science.
                     My experience with React.js, Node.js and other developing tools has drawn me towards a position as a
@@ -41,44 +46,6 @@
                     them into a language that a computer can understand, so I'd love to put my skills to use and learn as much as I can.
                     <br>
                     <a class="link" href = "mailto: mfz226@nyu.edu">mfz226@nyu.edu</a>
-                </div>
-            </div>
-            <div class="experience info" id="experience">
-                <div>
-                    <h2>Experience</h2>
-                    <div class="job">
-                        <div class="position"><b>Algorithms Teaching Assistant</b> at <b>NYU Tandon Computer Science</b></div>
-                        <i class="date">September 2021 - | Brooklyn, NY</i>
-                        <ul>
-                            <li>Exhibit deep understanding of sorting, selection, hashing, searching, minimum spanning trees, and single-source shortest path algorithms</li>
-                            <li>Hold office hours and grade homework assignments for graduate and undergraduate students in a course on design and analysis of algorithms</li>
-                        </ul>
-                    </div>
-                    <div class="job">
-                        <div class="position"><b>Enrollment Specialist</b> at <b>NYU Tandon Online</b></div>
-                        <i class="date">January 2019 - May 2021| Brooklyn, NY</i>
-                        <ul>
-                            <li>Provided clients with detailed information via phone call and email</li>
-                            <li>Consistently praised by management for efficiency, reliability, and leadership</li>
-                        </ul>
-                    </div>
-                    <div class="job">
-                        <div class="position"><b>Research Assistant</b> at <b>NYU Ability Project</b></div>
-                        <i class="date">June 2020 - August 2020 | Brooklyn, NY</i>
-                        <ul>
-                            <li>Created a React.js API for a third party music-making gadget so it can be used in Chrome without the company’s app</li>
-                            <li>Designed an online synth instrument using Tone.js for use with our web app</li>
-                            <li>Collaborated with other researchers to explore the intersection between disability and music technology</li>
-                        </ul>
-                    </div>
-                    <div class="job">
-                        <div class="position"><b>Data Responsibility Intern</b> at <b>The Govlab</b></div>
-                        <i class="date">June 2019 - August 2019 | Brooklyn, NY</i>
-                        <ul>
-                            <li>Presented strategies for company outreach</li>
-                            <li>Organized various projects to raise awareness of the need for data stewardship</li>
-                        </ul>
-                    </div>
                 </div>
             </div>
             <div class="projects info" id="projects">
@@ -173,6 +140,44 @@
                     </div>
                 </div>
             </div>
+            <div class="experience info" id="experience">
+                <div>
+                    <h2>Experience</h2>
+                    <div class="job">
+                        <div class="position"><b>Algorithms Teaching Assistant</b> at <b>NYU Tandon Computer Science</b></div>
+                        <i class="date">September 2021 - | Brooklyn, NY</i>
+                        <ul>
+                            <li>Exhibit deep understanding of sorting, selection, hashing, searching, minimum spanning trees, and single-source shortest path algorithms</li>
+                            <li>Hold office hours and grade homework assignments for graduate and undergraduate students in a course on design and analysis of algorithms</li>
+                        </ul>
+                    </div>
+                    <div class="job">
+                        <div class="position"><b>Enrollment Specialist</b> at <b>NYU Tandon Online</b></div>
+                        <i class="date">January 2019 - May 2021| Brooklyn, NY</i>
+                        <ul>
+                            <li>Provided clients with detailed information via phone call and email</li>
+                            <li>Consistently praised by management for efficiency, reliability, and leadership</li>
+                        </ul>
+                    </div>
+                    <div class="job">
+                        <div class="position"><b>Research Assistant</b> at <b>NYU Ability Project</b></div>
+                        <i class="date">June 2020 - August 2020 | Brooklyn, NY</i>
+                        <ul>
+                            <li>Created a React.js API for a third party music-making gadget so it can be used in Chrome without the company’s app</li>
+                            <li>Designed an online synth instrument using Tone.js for use with our web app</li>
+                            <li>Collaborated with other researchers to explore the intersection between disability and music technology</li>
+                        </ul>
+                    </div>
+                    <div class="job">
+                        <div class="position"><b>Data Responsibility Intern</b> at <b>The Govlab</b></div>
+                        <i class="date">June 2019 - August 2019 | Brooklyn, NY</i>
+                        <ul>
+                            <li>Presented strategies for company outreach</li>
+                            <li>Organized various projects to raise awareness of the need for data stewardship</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="skills info" id="skills">
                 <div>
                     <h2>Skills</h2>
@@ -215,7 +220,7 @@
                 <div>
                     <h2>Resume</h2>
                     <div class="images">
-                        <embed class="resumeImg" src="./images/resume_10_23_21.pdf"/>
+                        <embed class="resumeImg" src="./images/resume_11_09_21_.pdf"/>
                     </div>
                 </div>
             </div>

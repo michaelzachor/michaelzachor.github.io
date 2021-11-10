@@ -1,21 +1,40 @@
 body {
     font-family: 'Lato', sans-serif;
     font-size: 18px;
+    background-color: #FFF9E8;
 }
 
 h1 {
     text-align: center;
     font-size: 64px;
     margin-bottom: 10px;
+    font-weight: 900;
+}
+
+#about {
+    margin-top: 120px;
+}
+
+.blurb {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 100px;
 }
 
 .aboutMe {
     line-height: 150%;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    margin: 50px;
+}
+
 h2 {
-    color: #383838;
+    color: #a49118;
     font-size: 48px;
+    margin-bottom: 0px;
     text-align: center;
 }
 
@@ -96,15 +115,15 @@ h2 {
 }
 
 .link {
-    border: 1px solid gray;
+    border: 1px solid #A49118;
     border-radius: 2px;
     padding: 2px;
     text-decoration: none;
-    color: gray;
+    color: #A49118;
 }
 .link:hover {
-    color: white;
-    background-color: lightgray;
+    color: #FFF9E8;
+    background-color: #A49118;
 }
 
 ul {
@@ -119,11 +138,12 @@ ul {
 }
 
 .navbar-item:hover {
-    background-color: lightblue;
-}
+    background-color: #A49118;
+    color: #FFEAA0
+    }
 
 .navbar {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 234, 160, 0.9);
     position: fixed;
     top: 0px;
     width: 100%;
@@ -140,7 +160,7 @@ ul {
 }
 
 .resumeImg {
-    height: 800px;
+    height: 700px;
     width: 500px;
     display: block;
     margin: 10px auto;
