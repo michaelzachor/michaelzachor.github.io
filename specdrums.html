@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Specdrums Web API</title>
+  <meta name="description" content="Specdrums Web API">
+  <meta name="author" content="Michael Zachor">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="thePage">
+        <div class="main">
+            <nav class="navbar" role="navigation">
+                <div class="navbar-menu">
+                    <a class="navbar-item" href="/index.html">Home</a>
+                    <a class="navbar-item activeLink" href="/specdrums.html">Specdrums Web API</a>
+                    <a class="navbar-item" href="/rateski.html">Rate Killington Site</a>
+                    <a class="navbar-item" href="/spotify.html">Spotify Social</a>
+                </div>
+            </nav>
+            <div class="title info" id="title">
+                <h1>Specdrums Web API</h1>
+                <div class="dates">NYU Ability Project | June 2020 - August 2020</div>
+                <div class="projectlinks">
+                    <a class="link" href="https://fahmed3.github.io/Specdrums/">Video</a>
+                    <a class="link" href="https://github.com/fahmed3/Specdrums">Github</a>
+                </div>
+            </div> 
+            <div class="overview info">
+                <h2>Overview</h2>
+                <div class="projectdesc">
+                    The NYU Ability Project supports research in assistive technology and adaptive design for people with disabilities. My group’s goal was to create an accessible and extensible tactile musical interface that can support the music-making process of people with a diverse range of abilities. 
+                </div>
+            </div>
+            <div class="problem info">
+                <h2>Problem</h2>
+                <div class="projectdesc">
+                    We were working with the Specdrums: easy-to-use rings developed by Sphero that produce sounds when tapped on different-colored surfaces. However, the lack of an API for the Specdrums means they required the official app, which has limited functionality.
+                </div>
+            </div>
+            <div class="research info">
+                <h2>Research</h2>
+                <div class="projectdesc">
+                    I learned about Bluetooth Low Energy, its organization of data, and how devices can be accessed by and connected to other devices. This included learning about the GAP (Generic Access Profile) and GATT (Generic Attribute Profile), and how a client can read or write data from a server, using a UUID (Universally Unique Identifier) to access these services and characteristics. 
+                </div>
+            </div>
+            <div class="solution info">
+                <h2>Solution</h2>
+                <div class="projectdesc">
+                    My team developed an API that connects the Specdrums to Google Chrome via Bluetooth. My job was to parse all the data in the Specdrums and translate it into MIDI, and to create a Tone.js synth instrument that takes the data from the Specdrums and plays the corresponding notes and chords. 
+                </div>
+            </div>
+        </div> <!-- main -->
+    </div> <!-- thePage -->
+</body>
+</html>

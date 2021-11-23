@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Rate Killington Social Media Site</title>
+  <meta name="description" content="Specdrums Web API">
+  <meta name="author" content="Michael Zachor">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="thePage">
+        <div class="main">
+            <nav class="navbar" role="navigation">
+                <div class="navbar-menu">
+                    <a class="navbar-item" href="/index.html">Home</a>
+                    <a class="navbar-item" href="/specdrums.html">Specdrums Web API</a>
+                    <a class="navbar-item activeLink" href="/rateski.html">Rate Killington Site</a>
+                    <a class="navbar-item" href="/spotify.html">Spotify Social</a>
+                </div>
+            </nav>
+            <div class="title info" id="title">
+                <h1>Rate Killington Social Media Site</h1>
+                <div class="dates">NYU Dynamic Web Applications Course | September 2020 - December 2020</div>
+                <div class="projectlinks">
+                    <a class="link" href="https://sad-varahamihira-171787.netlify.app/">Site</a>
+                    <a class="link" href="https://github.com/michaelzachor/fall2020-finalproject">Github</a>
+                </div>
+            </div> 
+            <div class="overview info">
+                <h2>Overview</h2>
+                <div class="projectdesc">
+                    The final project for my Dynamic Web Applications course was to create a social media site with frontend and backend where users can log in and access their and other users’ information. I created a site where skiers can rate and review various ski trails and attractions at and around the Killington Ski Resort in Vermont. 
+                </div>
+            </div>
+            <div class="backend info">
+                <h2>Backend</h2>
+                <div class="projectdesc">
+                    User data is stored on Firebase. In my Firestore I have a collection of reviews. Each review is identified by the user’s email address and the name of the attraction they are reviewing, and it includes their rating of each aspect of the attraction and their review. My backend uses Node.js to pull the appropriate data from the Firestore and pushes it to the frontend.
+                </div>
+            </div>
+            <div class="frontend info">
+                <h2>Frontend</h2>
+                <div class="projectdesc">
+                    I use React.js for the frontend. I have a container for each page of the site, including login, create account, user profile, trails, apres ski, and leave a review, and I have most of the actual page content in component JavaScript files. I also have functions that authorize Firebase appropriately when the user logs in or logs out and add new user info the Firebase when the user creates a new account. In each component, I display the appropriate user or attraction information, pulling the JSON data from Heroku and displaying it with JSX. 
+                </div>
+            </div>
+        </div> <!-- main -->
+    </div> <!-- thePage -->
+</body>
+</html>
