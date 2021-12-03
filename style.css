@@ -100,6 +100,23 @@ h3 {
 
 .aboutMe {
     line-height: 150%;
+    max-width: 750px;
+    margin: auto;
+}
+
+.contactInfo {
+    margin: 20px auto;
+    max-width: 750px;
+}
+
+.contact {
+    width: auto;
+    border-radius: 10px;
+    background-color: #F2FEDC;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
 }
 
 .grow { 
@@ -138,6 +155,29 @@ h3 {
     margin: auto;
 }
 
+.skillsBox {
+    max-width: 480px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: space-evenly;
+}
+
+.skill {
+    width: auto;
+    border-radius: 10px;
+    background-color: #F2FEDC;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+hr {
+    max-width: 480px;
+    color: #a49118;
+    margin: auto;
+}
 /* 
 .skillName {
     font-size: 30px;
