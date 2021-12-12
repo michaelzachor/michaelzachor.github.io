@@ -29,38 +29,63 @@
             <div class="title info" id="title">
                 <div class="containerProj">
                     <div class="name-role column">
-                        <h1>Specdrums Web API</h1>  
-                        <h2 id="softEng">NYU Ability Project</h2>
-                        <h2 id="softEng">Summer 2020</h2>
+                        <h1>Specdrums <br> Web API</h1>  
+                        <h2 class="projInfo">NYU Ability Project</h2>
+                        <h2 class="projInfo">Summer 2020</h2>
                     </div>
                     <div class="images column">
                         <img class="projectImg" src="./images/IMG_3564.jpg">
                     </div>
                 </div>
+                <div class="projectTag">Hacking into handheld musical gadgets to enhance their accessibility</div>
             </div>
             <div class="overview info">
-                <h3 class="projectSection">Overview</h3>
+                <h3 class="projectSection">My Role</h3>
                 <div class="projectdesc">
-                    The NYU Ability Project supports research in assistive technology and adaptive design for people with disabilities. My group’s goal was to create an accessible and extensible tactile musical interface that can support the music-making process of people with a diverse range of abilities. 
+                    I was responsible for parsing complex numerical data, translating it into MIDI, 
+                    and creating a Tone.js synth instrument to turn this MIDI data into music.
                 </div>
             </div>
             <div class="problem info">
                 <h3 class="projectSection">Problem</h3>
                 <div class="projectdesc">
-                    We were working with the Specdrums: easy-to-use rings developed by Sphero that produce sounds when tapped on different-colored surfaces. However, the lack of an API for the Specdrums means they required the official app, which has limited functionality.
+                    Our goal was to adapt the Specdrums, easy-to-use rings developed by Sphero 
+                    that produce sounds when tapped on different-colored surfaces, for use 
+                    in medical waiting rooms for people with 
+                    disabilities. However, the lack of an API for the Specdrums means they 
+                    required the official app, which has limited functionality.
+                </div>
+            </div>
+            <div class="parsing info">
+                <h3 class="projectSection">Parsing</h3>
+                <div class="projectdesc">
+                    To get the data, we had to connect the Specdrums to Chrome via Bluetooth Low Energy
+                    and print out all of their data to see what was useful. When the Specdrums are tapped
+                    against a surface, they send out data corresponding to the color of the surface. I wrote
+                    code in React.js to turn the data into either singular notes or chords, and to specify each pitch in MIDI. 
+                </div>
+            </div>
+            <div class="output info">
+                <h3 class="projectSection">Output</h3>
+                <div class="projectdesc">
+                    I created a synth instrument using Tone.js which takes the MIDI and turns it into sound.
+                    I allow the user to choose a sound and a key, and then I make the synth play notes when 
+                    the user taps and release the notes when the user lifts their finger. 
                 </div>
             </div>
             <div class="research info">
                 <h3 class="projectSection">Research</h3>
                 <div class="projectdesc">
-                    I learned about Bluetooth Low Energy, its organization of data, and how devices can be accessed by and connected to other devices. This included learning about the GAP (Generic Access Profile) and GATT (Generic Attribute Profile), and how a client can read or write data from a server, using a UUID (Universally Unique Identifier) to access these services and characteristics. 
+                    I learned about Bluetooth Low Energy, its organization of data, and how devices can be 
+                    accessed by and connected to other devices. This included learning about the GAP 
+                    (Generic Access Profile) and GATT (Generic Attribute Profile), and how a client can read 
+                    or write data from a server, using a UUID (Universally Unique Identifier) to access these 
+                    services and characteristics. 
                 </div>
             </div>
-            <div class="solution info">
-                <h3 class="projectSection">Solution</h3>
-                <div class="projectdesc">
-                    My team developed an API that connects the Specdrums to Google Chrome via Bluetooth. My job was to parse all the data in the Specdrums and translate it into MIDI, and to create a Tone.js synth instrument that takes the data from the Specdrums and plays the corresponding notes and chords. 
-                </div>
+            <div class="iframe info">
+                <h3 class="projectSection">Video</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sxrPHimlUFU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div> <!-- main -->
     </div> <!-- thePage -->

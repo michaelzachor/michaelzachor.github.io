@@ -42,7 +42,7 @@ body {
 }
 
 h1 {
-    text-align: center;
+    /* text-align: center; */
     font-size: 58px;
     margin: 10px 0 10px 0;
     font-weight: 900;
@@ -52,7 +52,6 @@ h2 {
     color: #a09d8e;
     font-size: 40px;
     margin-bottom: 0px;
-    text-align: center;
 }
 
 h3 {
@@ -81,6 +80,12 @@ h3 {
 
 .name-role {
     margin: auto;
+    text-align: left;
+}
+
+.projInfo {
+    text-align: left;
+    margin: 0;
 }
 
 .portrait {
@@ -97,6 +102,10 @@ h3 {
     text-align: center;
     margin-bottom: 50px;
     letter-spacing: 1px;
+}
+
+.sectionTitle {
+    text-align: center;
 }
 
 #softEng {
@@ -238,15 +247,55 @@ a:hover {
 
 .containerProj {
     display: grid;
-    grid-template-columns: 70% 30%;
-    margin: 50px 20px 50px 20px;
+    grid-template-columns: 50% 50%;
+    margin: 50px 20px 50px 0px;
 }
 
 .projectImg {
-    max-width: 250px;
+    max-width: 450px;
     height: auto;
     margin-left: 20px;
     /* display: block; */
+}
+
+.projectImg1 {
+    max-width: 200px;
+    height: auto;
+    margin-left: 20px;
+}
+
+pre {
+    background-color: #F2FEDC;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+    background-color: #ffffff;
+}
+
+.websiteIframe {
+    width: 100%;
+    height: 500px;
+}
+
+.figmaIframe {
+    width: 300px;
+    height: 600px;
+}
+
+video {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 500px;
+}
+
+.projectTag {
+    color: #a09d8e;
+    font-style: italic;
+    font-size: 24px;
 }
 
 .dates {
