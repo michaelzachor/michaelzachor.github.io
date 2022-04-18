@@ -36,6 +36,11 @@ body {
     color: #FFEAA0
 } 
 
+.navbar-name {
+    /* margin-right: auto;
+    margin-left: 20px; */
+}
+
 .activeLink {
     background-color: #A49118;
     color: #FFEAA0
