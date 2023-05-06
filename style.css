@@ -375,3 +375,16 @@ ul {
     display: block;
     margin: 10px auto;
 }
+
+.processingSketchOuter {
+    display: block;
+    margin: auto;
+}
+
+.processingSketch {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    border: 5px solid black;
+    /* margin: 50px; */
+}
