@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Rate Killington Social Media Site</title>
+  <title>Graph Coloring Demo</title>
   <meta name="description" content="Vertex Coloring Application">
   <meta name="author" content="Michael Zachor">
 
@@ -14,6 +14,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.0/processing.min.js"></script>
 
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
 </head>
 
@@ -29,9 +36,57 @@
                     <a class="navbar-item" href="/spotify.html">Spotify Social</a>
                 </div>
             </nav>
-            <!-- <div class="processingSketchOuter"> -->
-                <canvas class="processingSketch" tabindex="0" data-processing-sources="final_proj_copy/final_proj_copy.pde"></canvas>
-            <!-- </div> -->
+            <div id="title">
+                <h1 id="algoTitle">Graph Coloring Visualization and Heuristics</h1>
+            </div>
+            <canvas class="processingSketch" tabindex="0" data-processing-sources="final_proj_copy/final_proj_copy.pde"></canvas>
+            <div class="more-info">
+                <h2>DSatur</h2>
+                <div class="algo-info">
+                    <p>As seen above, the DSatur Algorithm is a graph coloring heuristic algorithm which prioritises the non-colored vertex with the highest number of uniquely colored neighbors. This number is called the Degree of Saturation, which is where the algorithm gets its name from. The degree of saturation can be stored with each vertex and updated after every round, so the algorith takes quadratic time.</p>
+                    <p>Below are some resources on DSatur:</p>
+                    <ul>
+                        <li><a href="https://www.geeksforgeeks.org/graph-coloring-set-2-greedy-algorithm/#">Geeks for Geeks article with simple example</a></li>
+                        <li><a href="https://pjrule.me/comp150-alg/">Good landing page for general graph coloring algorithms, by Parker J. Rule</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="more-info">
+                <h2>Recursive Largest First</h2>
+                <div class="algo-info">
+                    <p>The Recursive Largest First (RLF) Algorithm is a graph coloring heuristic algorithm which prioritises the largest independent set of vertices that has not been colored yet. However, identifying the largest independent set of a graph is NP-hard so the best results using this algorithm come from approximations.</p>
+                    <p>Below are some resources on RLF:</p>
+                    <ul>
+                        <li><a href="https://www.gerad.ca/~alainh/RLFPaper.pdf">A new efficient RLF-like Algorithm for the Vertex Coloring Algorithm by Adegbindin, Hertz, Bellaïche</a></li>
+                        <li><a href="https://www.codeproject.com/Articles/88674/Graph-coloring-using-Recursive-Large-First-RLF-alg">Implementation by Duc Huy Nguyen</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="more-info">
+                <h2>Equitable Coloring</h2>
+                <div class="algo-info">
+                    <p>Equitable coloring is when we color a graph such that each color is used as equally as possible, while still minimizing the number of colors used. The size of color classes should differ by at most one.</p>
+                    <p>Below are some resources on Equitable Coloring:</p>
+                    <ul>
+                        <li><a href="https://link.springer.com/article/10.1007/s00493-010-2483-5">A fast algorithm for equitable coloring by Kierstead, Kostochka, Mydlarz, and Szemerédi</a></li>
+                        <li><a href="https://www.sciencedirect.com/science/article/pii/S0012365X11002378">Equitable ∆-coloring of graphs by Chen and Hen</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="more-info">
+                <h2>Unit Disk Coloring</h2>
+                <div class="algo-info">
+                    <p>Unit Disk graphs are graphs of intersecting circles that are all the same size. Following along with the radio station application above, this would be the case if each radio station had the same broadcasting range. This restriction can have various implications on the coloring of the graph. </p>
+                    <p>Below are some resources on Unit Disk Coloring:</p>
+                    <ul>
+                        <li><a href="https://link.springer.com/article/10.1007/PL00009196">On Coloring Unit Disk Graphs by Gräf, Stumpf, and Weißenfels</a></li>
+                        <li><a href="https://arxiv.org/pdf/math/9409226.pdf">Simple Heuristics for Unit Disk Graphs by Marathe, Breu, Hunt III, Ravi, and Rosenkratz</a></li>
+                        <li><a href="https://arxiv.org/pdf/math/9409226.pdf">Distributed Coloring and the Local Structure of Unit-Disk Graphs by Esperet, Julliot, and de Mesmay</a></li>
+                        <li><a href="https://link.springer.com/chapter/10.1007/11604686_31">Approximation Algorithms for Unit Disk Graphs by van Leeuwen</a></li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
     </div>
 </body>

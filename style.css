@@ -33,7 +33,7 @@ body {
 
 .navbar-item:hover {
     background-color: #A49118;
-    color: #FFEAA0
+    color: #FFEAA0;
 } 
 
 .navbar-name {
@@ -383,8 +383,17 @@ ul {
 
 .processingSketch {
     display: block;
-    margin: auto;
-    margin-top: 50px;
-    border: 5px solid black;
+    margin: 45px;
+    border: 3px solid grey;
     /* margin: 50px; */
+}
+
+#algoTitle {
+    margin-left: 45px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.more-info {
+    margin: 45px;
 }
