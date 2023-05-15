@@ -156,6 +156,7 @@ h3 {
 
 a { 
     transition: all .2s ease-in-out; 
+    text-decoration: none;
     /* z-index: 1; */
 }
     
@@ -397,3 +398,15 @@ ul {
 .more-info {
     margin: 45px;
 }
+
+.algo-info a {
+    color: #A49118;
+}
+
+.algo-info a:hover {
+    color: grey;
+}
+
+/* .algo-info a:visited {
+    color: #A49118;
+} */

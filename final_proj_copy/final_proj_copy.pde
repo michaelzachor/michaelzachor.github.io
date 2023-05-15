@@ -172,8 +172,10 @@ void draw() {
     rect(width/4,height/4,width/2,30,10);
     rect(width/4,height/4+40,width/2,30,10);
     fill(0);
-    text("Start with greedy algo",width/4+5,height/4+20);
-    text("Skip to DSatur heuristic algo",width/4+5,height/4+65);
+    text("Start with standard greedy algorithm",width/4+5,height/4+21);
+    text("Skip to DSatur heuristic algorithm",width/4+5,height/4+62);
+    if (mouseX>width/4 && mouseX<3*width/4 && ((mouseY>height/4 && mouseY<height/4+30) || (mouseY>height/4+40 && mouseY<height/4+70))) cursor(HAND);
+    else cursor(ARROW);
   }
   else if (phase == 1) instruction1Display();
   else if (phase == 2) {
@@ -325,12 +327,6 @@ void draw() {
     }
     drawCircles2();
     drawCircles2D();
-    //fill(255);
-    //stroke(0);
-    //strokeWeight(3);
-    //rect(3*width/4,3*height/16,width/8,3*height/64,10);
-    //fill(0);
-    //text("Start Over",13*width/16-16,7*height/32);
   }
 }
 
@@ -347,6 +343,8 @@ void startDisplay() {
   textAlign(CENTER);
   text("Click to begin", width/2, height/10-tSize/2);
   textAlign(LEFT);
+  if (mouseX>width/4 && mouseX<3*width/4 && mouseY>height/40 && mouseY<height/40+50) cursor(HAND);
+  else cursor(ARROW);
 }
 
 void intro1Display() {
@@ -1130,8 +1128,8 @@ void findDelta() {
 
 boolean checkPointOkay() {
   boolean insideBox = mouseX > width/4+(3*width/4-mapSize)/2 && mouseX < width/4+(3*width/4-mapSize)/2+mapSize && mouseY > width/4+(3*width/4-mapSize)/2 && mouseY < width/4+(3*width/4-mapSize)/2+mapSize;
-  for (int i = -10; i < 5; i++) {
-    for (int j = -10; j < 5; j++) {
+  for (int i = -7; i < 10; i++) {
+    for (int j = -7; j < 8; j++) {
       if (get(mouseX+i,mouseY+j) != color(255)) return false;
     }
   }
@@ -1141,13 +1139,18 @@ boolean checkPointOkay() {
 // ~~~~ USER INTERACTION
 
 void mouseClicked() {
-  if (phase == 0.0 && mouseX > width/4 && mouseX < 3*width/4 && mouseY > height/40 && mouseY < height/40 + 50) phase = 0.1;
+  if (phase == 0.0 && mouseX > width/4 && mouseX < 3*width/4 && mouseY > height/40 && mouseY < height/40 + 50) {
+    phase = 0.1;
+    cursor(ARROW);
+  }
   else if (phase == 0.3 && mouseX > width/4 && mouseX < 3*width/4 && mouseY > height/4 && mouseY < height/4 + 30) {
     drawMap();
     phase = 1;
     drawMap();
+    cursor(ARROW);
   } else if (phase == 0.3 && mouseX > width/4 && mouseX < 3*width/4 && mouseY > height/4+40 && mouseY < height/4 + 70) {
     phase = 10.1;
+    cursor(ARROW);
   }
   if (phase == 1 && checkPointOkay()) {
     stroke(0);
